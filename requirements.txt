@@ -1,0 +1,24 @@
+# DeepSearch AI v3.0 — Requirements
+
+# ── AI / ML ───────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0          # CLIP via Hugging Face (openai/clip-vit-base-patch32)
+
+# ── Vector Search (NEW v3.0) ──────────────────
+faiss-cpu>=1.7.4              # FAISS persistent index (swap for faiss-gpu if CUDA)
+
+# ── Computer Vision ───────────────────────────
+opencv-python>=4.8.0          # Frame extraction + RTSP + Highlight Reel cutting
+
+# ── Data / Numerics ───────────────────────────
+numpy>=1.24.0                 # Cosine similarity (dot product)
+
+# ── Frontend ──────────────────────────────────
+streamlit>=1.28.0             # UI + video player + file uploader
+
+# ── Image Handling ────────────────────────────
+Pillow>=10.0.0
+
+# ── Storage (NEW v3.0) ────────────────────────
+# sqlite3 is built into Python — no pip install needed
